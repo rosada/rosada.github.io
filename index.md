@@ -6,113 +6,31 @@ layout: default
 So, because as **devops engineer** I often forgot about the project I do, and also I want to have wiki for myself, I am using this free pages.
 
 Just see my profile here : 
-[Linkendin](https://www.linkedin.com/rosada).
+[Linkendin](https://www.linkedin.com/in/arifrosada/).
 
 
-## Header 2
+## KUBE-JENKINS-ARGOCD-HARBOR
+this is my code to automate build fresh RKE cluster, so when you do RKE UP + kubectl apply you will get Kubernetes cluster with ArgoCD, Jenkins,Harbor.
+what will be installed is :
+* Jenkins to automate deployment of the application, Jenkins will be installed as add-on and will setup to load grovy script to initiate first jenkins job
+* Harbor is docker registry, just install it
+* ArgoCD is Continues Delivery tools, so argo will read the manifest repo 
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+Here is the code and how to install : [KUBERNETES]().
 
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+## ANSIBLE-VAGRANT-WEBSERVER
+this is my code from learning course, so the idea is I want to create apache website with mysql DB and nginx as LB, using ansible role.
+What will be installed is :
+* 4 Linux servers with Ubuntu OS running
+* Give them the role, for example 1 particular IP will be the LB
+* Webserver role will install apache and insert demo_app
+* The database will be mysql and automate creation of the database + user
+* The LB role using nginx proxy to webserver
 
 
-### Definition lists can be used with HTML syntax.
+Here is the code and how to install : [Ansible-infra](https://github.com/rosada/ansible-infra).
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
 
-```
-The final element.
-```
+
+## Update again later
